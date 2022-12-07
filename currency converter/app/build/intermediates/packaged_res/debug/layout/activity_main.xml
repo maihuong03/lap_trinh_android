@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/afterCurrencyEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Result Here"
+        android:inputType="number"
+        android:minHeight="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/afterCurrency" />
+
+    <TextView
+        android:id="@+id/afterCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="To: VND"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/presentCurrencyEditText" />
+
+    <TextView
+        android:id="@+id/presentCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="From: USD"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/presentCurrencyEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter a Number"
+        android:inputType="number"
+        android:minHeight="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/presentCurrency" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="convertActivity"
+        android:text="Convert"
+        app:layout_constraintEnd_toStartOf="@+id/clearButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/changeCurrencyButton"
+        app:layout_constraintTop_toBottomOf="@+id/afterCurrencyEditText" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clearActivity"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/convertButton"
+        app:layout_constraintTop_toBottomOf="@+id/afterCurrencyEditText" />
+
+    <Button
+        android:id="@+id/changeCurrencyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ChangeCurruncy"
+        android:onClick="changeCurrencyActivity"
+        app:layout_constraintEnd_toStartOf="@+id/convertButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/afterCurrencyEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
