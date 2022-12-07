@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrencyCoverterType">
+
+    <TextView
+        android:id="@+id/toCurrencyType"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="To currency"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromJPYButton" />
+
+    <TextView
+        android:id="@+id/fromCurrencyType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="From currency"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/fromCNYButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CNY"
+        android:onClick="radioButtonCNY"
+        app:layout_constraintEnd_toStartOf="@+id/fromKRWButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromCurrencyType" />
+
+    <RadioButton
+        android:id="@+id/fromKRWButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KRW"
+        android:onClick="radioButtonKRW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fromCNYButton"
+        app:layout_constraintTop_toBottomOf="@+id/fromCurrencyType" />
+
+    <RadioButton
+        android:id="@+id/fromEURButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EUR"
+        android:onClick="radioButtonEUR"
+        app:layout_constraintEnd_toStartOf="@+id/fromUSDButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromCNYButton" />
+
+    <RadioButton
+        android:id="@+id/fromUSDButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USD"
+        android:onClick="radioButtonUSD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fromEURButton"
+        app:layout_constraintTop_toBottomOf="@+id/fromKRWButton" />
+
+    <RadioButton
+        android:id="@+id/fromJPYButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JYP"
+        android:onClick="radioButtonJYP"
+        app:layout_constraintEnd_toStartOf="@+id/fromVNDButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromEURButton" />
+
+    <RadioButton
+        android:id="@+id/fromVNDButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VND"
+        android:onClick="radioButtonVND"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fromJPYButton"
+        app:layout_constraintTop_toBottomOf="@+id/fromUSDButton" />
+
+    <RadioButton
+        android:id="@+id/toCNYButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CNY"
+        android:onClick="radioButtonCNY"
+        app:layout_constraintEnd_toStartOf="@+id/toKRWButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toCurrencyType" />
+
+    <RadioButton
+        android:id="@+id/toKRWButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KRW"
+        android:onClick="radioButtonKRW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toCNYButton"
+        app:layout_constraintTop_toBottomOf="@+id/toCurrencyType" />
+
+    <RadioButton
+        android:id="@+id/toEURButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EUR"
+        android:onClick="radioButtonEUR"
+        app:layout_constraintEnd_toStartOf="@+id/toUSAButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toCNYButton" />
+
+    <RadioButton
+        android:id="@+id/toUSAButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USD"
+        android:onClick="radioButtonUSD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toEURButton"
+        app:layout_constraintTop_toBottomOf="@+id/toKRWButton" />
+
+    <RadioButton
+        android:id="@+id/toJPYButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JPY"
+        android:onClick="radioButtonJYP"
+        app:layout_constraintEnd_toStartOf="@+id/toVNDButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toEURButton" />
+
+    <RadioButton
+        android:id="@+id/toVNDButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VND"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toJPYButton"
+        app:layout_constraintTop_toBottomOf="@+id/toUSAButton" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:onClick="okActivity"
+        app:layout_constraintEnd_toStartOf="@+id/cancelButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toJPYButton" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:onClick="cancelActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/okButton"
+        app:layout_constraintTop_toBottomOf="@+id/toVNDButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
