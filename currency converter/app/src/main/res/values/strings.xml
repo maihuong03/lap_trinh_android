@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 <resources>
     <string name="app_name">CurrencyConverter</string>
+=======
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+>>>>>>> 8f9f00e51f40fc683286d493efe1fde9251e47ae
 </resources>
